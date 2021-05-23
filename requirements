@@ -1,0 +1,7 @@
+Django == 3.2.3
+python-dotenv == 0.17.1
+
+
+plik .env :
+SECRET_KEY = supersecret
+DEBUG = True
