@@ -1,0 +1,180 @@
+body
+{
+
+	background-image:url(lol1.jpg);
+	background-size: cover;
+}
+
+img
+{
+	max-width:100%;
+	max-height:100%;
+}
+
+.wrapper
+{
+
+	background-size: cover;
+	width:100%;
+	float:left;
+}
+
+#header
+{
+	opacity: 0.8;
+	margin-top: 10px;
+	width:90%;
+	margin-right:auto;
+	margin-left:auto;
+	background:#B5B5B5;
+	text-align:center;
+
+}
+
+.img_car
+{
+	width:450px;
+	height:450px;
+}
+
+#nav
+{
+	opacity: 0.6;
+	margin-top: 10px;
+	padding:15px;
+	width:90%;
+	margin-right:auto;
+	margin-left:auto;
+	background:#691c1c;
+	text-align:center;
+
+}
+
+
+#base_info
+{
+	opacity: 0.8;
+	margin-top: 30px;
+	text-align:center;
+	width:500px;
+	height:500px;
+	float:left;
+	background:#1b5e20;
+	margin-left:150px;
+
+}
+
+.info_div
+{
+	text-align:center;
+	width:200px;
+	height:100px;
+	float:left;
+	margin-left:10px;
+	border: 1px dashed #751b1b;
+}
+
+.info_div:hover
+{
+	background-color:yellow;
+}
+
+#div_photo
+{
+	margin-top: 30px;
+	width:700px;
+	height:500px;
+	float:left;
+	margin-left:30px;
+	background-image:url(car.jpg);
+	background-size: cover;
+}
+
+
+
+#footer
+{
+	opacity: 0.8;
+	margin-top: 30px;
+	text-align:center;
+	background:#B5B5B5;
+	width:90%;
+	margin-right:auto;
+	margin-left:auto;
+
+}
+
+ol /*  zapis dotyczący wszystkich list !!!! */
+{
+
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	font-size:18 px;
+	height: 35 px;
+	line-height: 200 %;
+	display: inline-block; /*  możemy tworzyć elementy blokowe któe działają jak float:left !!!!!!*/
+}
+
+ol a /*  stilizacja hperłacza w listach */
+{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+ol > li /*  rodzic > potomek  - stylizujemy tylko li listy ol*/
+{
+	float: left;
+	width: 150px;
+	height:40px;
+	border-right: 1px dashed #751b1b;
+}
+
+
+ol > li :first-child /*  dodanie do pierwszej opcji w menu !!!!!!!
+pierwsze dziecki to pierwsze li w kodzie !!!!!! */
+{
+	border-left: 1px dashed #751b1b;
+}
+
+ol > li:hover
+{
+	background-color: #cf6969;
+}
+
+/*  napis jest superłączem !!!!!*/
+ol > li:hover > a
+{
+	color: #451717;
+}
+
+ol > li > ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 40 px;
+	display:none;
+
+}
+
+/*  odwołąnie się do hoover bo wie gdzie jest myszka na ekranie !!!!!*/
+ol > li:hover > ul
+{
+	display: block;
+}
+
+ol > li > ul > li
+{
+	background-color: #cf6969;
+	position: relative;
+	z-index: 100;
+	border-top: 1px dashed #751b1b;
+}
+
+ol > li > ul > li:hover > a
+{
+	color: #29EEF8;
+}
+
